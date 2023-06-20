@@ -1,2 +1,3 @@
 # Goal of Project:
-- using the tweetynet network, we want to see if training the network and then freezing the network and using the frozen network would result in intresting results when clustered 
+- The objective of this project is to see if the TweetyNet model can be used in a mostly unsupervised way to identify song syllables. 
+- We have decided to attack this problem in the following manner. Since currently I have an annotated dataset for three birds, TweetyNet will be trained on 2 birds, and then the weights will be frozen. The third bird (llb3, which happens to be the same bird that was used for UMAP and VAE analysis) will then be passed through the TweetyNet network. This will result in activations in the final logits layer of the network. These activations will be dimensionally reduced via UMAP and then plotted. 
