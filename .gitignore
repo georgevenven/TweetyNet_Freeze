@@ -1,2 +1,4 @@
 data/
 training_checkpoints/
+predictions.npy
+.ipynb_checkpoints/
